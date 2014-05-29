@@ -54,6 +54,7 @@
 			<div id="right">
 				<table id="info-table">
 					<tr id="table-title">
+						<td id="indicator-title"><p class="info-table-ch">&nbsp;</p> <p class="info-table-en">&nbsp;</p></td>
 						<td><p class="info-table-ch">車次</p> <p class="info-table-en">TRAIN NO.</p></td>
 						<td><p class="info-table-ch">開往</p> <p class="info-table-en">DESTINATION</p></td>
 						<td><p class="info-table-ch">車種</p> <p class="info-table-en">TYPE</p></td>
@@ -63,48 +64,53 @@
 					</tr>
 					<tr id="table-space"></tr>
 					<tr id="table-train-0" class="table-train">
-						<td class="train_no"></td>
-						<td class="destination"></td>
-						<td class="train_type"></td>
-						<td class="dept_time"></td>
-						<td class="via"></td>
-						<td class="remarks"></td>
+						<td class=""><div class="indicator"><span class="oddLight">●</span><br/><span class="evenLight">●</span></div></td>
+						<td class="train_no">&nbsp;</td>
+						<td class="destination">&nbsp;</td>
+						<td class="train_type">&nbsp;</td>
+						<td class="dept_time">&nbsp;</td>
+						<td class="via">&nbsp;</td>
+						<td class="remarks">&nbsp;</td>
 					</tr>
-					<tr id="table-space"> <td colspan="7">&nbsp;</td> </tr>
+					<tr id="table-space"> <td colspan="8">&nbsp;</td> </tr>
 					<tr id="table-train-1" class="table-train">
-						<td class="train_no"></td>
-						<td class="destination"></td>
-						<td class="train_type"></td>
-						<td class="dept_time"></td>
-						<td class="via"></td>
-						<td class="remarks"></td>
+						<td class="">&nbsp;</td>
+						<td class="train_no">&nbsp;</td>
+						<td class="destination">&nbsp;</td>
+						<td class="train_type">&nbsp;</td>
+						<td class="dept_time">&nbsp;</td>
+						<td class="via">&nbsp;</td>
+						<td class="remarks">&nbsp;</td>
 					</tr>
-					<tr id="table-space"> <td colspan="7">&nbsp;</td> </tr>
+					<tr id="table-space"> <td colspan="8">&nbsp;</td> </tr>
 					<tr id="table-train-2" class="table-train">
-						<td class="train_no"></td>
-						<td class="destination"></td>
-						<td class="train_type"></td>
-						<td class="dept_time"></td>
-						<td class="via"></td>
-						<td class="remarks"></td>
+						<td class="">&nbsp;</td>
+						<td class="train_no">&nbsp;</td>
+						<td class="destination">&nbsp;</td>
+						<td class="train_type">&nbsp;</td>
+						<td class="dept_time">&nbsp;</td>
+						<td class="via">&nbsp;</td>
+						<td class="remarks">&nbsp;</td>
 					</tr>
-					<tr id="table-space"> <td colspan="7">&nbsp;</td> </tr>
+					<tr id="table-space"> <td colspan="8">&nbsp;</td> </tr>
 					<tr id="table-train-3" class="table-train">
-						<td class="train_no"></td>
-						<td class="destination"></td>
-						<td class="train_type"></td>
-						<td class="dept_time"></td>
-						<td class="via"></td>
-						<td class="remarks"></td>
+						<td class="">&nbsp;</td>
+						<td class="train_no">&nbsp;</td>
+						<td class="destination">&nbsp;</td>
+						<td class="train_type">&nbsp;</td>
+						<td class="dept_time">&nbsp;</td>
+						<td class="via">&nbsp;</td>
+						<td class="remarks">&nbsp;</td>
 					</tr>
-					<tr id="table-space"> <td colspan="7">&nbsp;</td> </tr>
+					<tr id="table-space"> <td colspan="8">&nbsp;</td> </tr>
 					<tr id="table-train-4" class="table-train">
-						<td class="train_no"></td>
-						<td class="destination"></td>
-						<td class="train_type"></td>
-						<td class="dept_time"></td>
-						<td class="via"></td>
-						<td class="remarks"></td>
+						<td class="">&nbsp;</td>
+						<td class="train_no">&nbsp;</td>
+						<td class="destination">&nbsp;</td>
+						<td class="train_type">&nbsp;</td>
+						<td class="dept_time">&nbsp;</td>
+						<td class="via">&nbsp;</td>
+						<td class="remarks">&nbsp;</td>
 					</tr>
 				</table>
 			</div>
@@ -137,6 +143,28 @@
 		}
 	});
 
+	var lightCount = 0;
+	
+	setInterval(function () {
+
+		if (lightCount%2==0) {
+
+			$('.oddLight').css("color", "#0A0A0A");
+			$('.evenLight').css("color", "#F50A0A");
+
+			lightCount = 0;
+		}
+		else {
+
+			$('.oddLight').css("color", "#F50A0A");
+			$('.evenLight').css("color", "#0A0A0A");
+		}
+
+
+
+		lightCount++;
+
+	}, 1000);
 
 </script>
 
