@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!-- 
+	Copyright (C) Benyi Hsia 
+	CC BY SA
+	http://benyi.tw
+-->
+
+
+<html>
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>旅客資訊系統</title>
+
+	<script src="js/jquery.min.js"></script> 
+	<script src="js/bootstrap.min.js"></script> 
+
+	<link rel="stylesheet" href="css/bootstrap.min.css"> 
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Armata|Trykker" type="text/css"> <!-- font -->
+
+
+</head>
+
+<body>
+
+<a href="https://github.com/banqhsia/TRA-PIDS"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+
+	<div id="wrapper">
+
+		<div id="title">
+
+			<p class="title-ch"></p>
+			<p class="title-en"></p>
+
+		</div>
+
+		<div id="content">
+			<div id="left">
+
+				<div id="platform">
+					
+				</div>
+
+				<div id="platform-text" >
+					<p class="platform-ch"></p>
+					<p class="platform-en"></p>
+				</div>
+
+			</div>
+
+			<div id="right">
+				<table id="info-table">
+					<tr id="table-title">
+						<td><p class="info-table-ch">車次</p> <p class="info-table-en">TRAIN NO.</p></td>
+						<td><p class="info-table-ch">開往</p> <p class="info-table-en">DESTINATION</p></td>
+						<td><p class="info-table-ch">車種</p> <p class="info-table-en">TYPE</p></td>
+						<td><p class="info-table-ch">開車時間</p> <p class="info-table-en">DEPT. TIME</p></td>
+						<td><p class="info-table-ch">經由</p> <p class="info-table-en">VIA</p></td>
+						<td><p class="info-table-ch">備註</p> <p class="info-table-en">REMARKS</p></td>
+					</tr>
+					<tr id="table-space"></tr>
+					<tr id="table-train-0" class="table-train">
+						<td class="train_no"></td>
+						<td class="destination"></td>
+						<td class="train_type"></td>
+						<td class="dept_time"></td>
+						<td class="via"></td>
+						<td class="remarks"></td>
+					</tr>
+					<tr id="table-space"> <td colspan="7">&nbsp;</td> </tr>
+					<tr id="table-train-1" class="table-train">
+						<td class="train_no"></td>
+						<td class="destination"></td>
+						<td class="train_type"></td>
+						<td class="dept_time"></td>
+						<td class="via"></td>
+						<td class="remarks"></td>
+					</tr>
+					<tr id="table-space"> <td colspan="7">&nbsp;</td> </tr>
+					<tr id="table-train-2" class="table-train">
+						<td class="train_no"></td>
+						<td class="destination"></td>
+						<td class="train_type"></td>
+						<td class="dept_time"></td>
+						<td class="via"></td>
+						<td class="remarks"></td>
+					</tr>
+					<tr id="table-space"> <td colspan="7">&nbsp;</td> </tr>
+					<tr id="table-train-3" class="table-train">
+						<td class="train_no"></td>
+						<td class="destination"></td>
+						<td class="train_type"></td>
+						<td class="dept_time"></td>
+						<td class="via"></td>
+						<td class="remarks"></td>
+					</tr>
+					<tr id="table-space"> <td colspan="7">&nbsp;</td> </tr>
+					<tr id="table-train-4" class="table-train">
+						<td class="train_no"></td>
+						<td class="destination"></td>
+						<td class="train_type"></td>
+						<td class="dept_time"></td>
+						<td class="via"></td>
+						<td class="remarks"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+
+<script type="text/javascript">
+	
+	$.getJSON ('data/data.json', function(data) {
+
+		$('.title-ch').append(data.title_ch);
+		$('.title-en').append(data.title_en);
+
+		$('.platform-ch').append(data.platform_ch);
+		$('.platform-en').append(data.platform_en);
+
+		$('#platform').append(data.platform);
+
+		for (var i=0; i<=4; i++) {
+
+			$('#table-train-'+ i +'>.train_no').append(data.data[i].train_no);
+			$('#table-train-'+ i +'>.destination').append(data.data[i].destination);
+			$('#table-train-'+ i +'>.train_type').append(data.data[i].train_type);
+			$('#table-train-'+ i +'>.dept_time').append(data.data[i].dept_time);
+			$('#table-train-'+ i +'>.plat').append(data.data[i].plat);
+			$('#table-train-'+ i +'>.via').append(data.data[i].via);
+			$('#table-train-'+ i +'>.remarks').append(data.data[i].remarks);
+
+		}
+	});
+
+
+</script>
+
+</body>
+</html>
