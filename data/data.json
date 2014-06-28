@@ -1,52 +1,52 @@
 {
-	"title_ch": "中壢火車站",
-	"title_en": "Zhongli Railway Station",
-	"platform": "1",
+	"title_ch": "臺北火車站",
+	"title_en": "Taipei Railway Station",
+	"platform": "3",
 	"platform_ch": "月台",
 	"platform_en": "PLAT.",
 	"data": 
 	[
 		{
-			"train_no": "1180",
-			"destination": "基隆",
-			"train_type": "區間車",
-			"dept_time": "09:49",
+			"train_no": "651",
+			"destination": "彰化",
+			"train_type": "莒光號",
+			"dept_time": "19:00",
 			"via": "山線",
 			"remarks": "準點"
 		},
 		{
-			"train_no": "502",
-			"destination": "七堵",
-			"train_type": "莒光",
-			"dept_time": "10:04",
-			"via": "山線",
-			"remarks": "準點"
-
-		},
-		{
-			"train_no": "1186",
-			"destination": "基隆",
-			"train_type": "區間車",
-			"dept_time": "10:15",
-			"via": "",
-			"remarks": "準點"
-
-		},
-		{
-			"train_no": "108",
-			"destination": "七堵",
+			"train_no": "229",
+			"destination": "樹林",
 			"train_type": "自強",
-			"dept_time": "10:28",
+			"dept_time": "19:05",
+			"via": "",
+			"remarks": "準點"
+
+		},
+		{
+			"train_no": "4197",
+			"destination": "樹林",
+			"train_type": "區間車",
+			"dept_time": "18:55",
+			"via": "",
+			"remarks": "晚13分"
+
+		},
+		{
+			"train_no": "1261",
+			"destination": "苗栗",
+			"train_type": "區間車",
+			"dept_time": "19:12",
 			"via": "山線",
 			"remarks": "準點"
 
 		},
 		{
-			"train_no": "1188",
-			"destination": "基隆",
-			"train_type": "區間車",
-			"dept_time": "10:39",
-			"via": "",
+			"train_no": "181",
+			"destination": "高雄",
+			"train_type": "自強號",
+			"dept_time": "19:20",
+			"via": "山線",
 			"remarks": "準點"
 		}
 	]
