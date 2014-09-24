@@ -6,7 +6,7 @@ Taiwan Railway Administration Passenger Information Display System
 
 Data format : JSON
 
-Data dir    : data/data.json
+Data dir    : data/data.js
 
 train indicator by timfan3939
 
