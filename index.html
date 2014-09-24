@@ -16,6 +16,7 @@
 
 	<script src="js/jquery.min.js"></script> 
 	<script src="js/bootstrap.min.js"></script> 
+	<script src="data/data.js"></script>
 
 	<link rel="stylesheet" href="css/bootstrap.min.css"> 
 	<link rel="stylesheet" href="css/main.css">
@@ -120,7 +121,7 @@
 
 <script type="text/javascript">
 	
-	$.getJSON ('data/data.json', function(data) {
+	var data = $.parseJSON(JSON.stringify(diagram));
 
 		$('.title-ch').append(data.title_ch);
 		$('.title-en').append(data.title_en);
@@ -141,7 +142,6 @@
 			$('#table-train-'+ i +'>.remarks').append(data.data[i].remarks);
 
 		}
-	});
 
 	var lightCount = 0;
 	

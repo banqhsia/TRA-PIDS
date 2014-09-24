@@ -1,4 +1,5 @@
-{
+var diagram = {
+	
 	"title_ch": "中壢火車站",
 	"title_en": "Zhongli Railway Station",
 	"platform": "1",
