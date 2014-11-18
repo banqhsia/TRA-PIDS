@@ -1,10 +1,21 @@
 var diagram = {
 	
-	"title_ch": "中壢火車站",
+	"title_ch": "中壢火車站", 
+	//中文站名 Main Title
+	
 	"title_en": "Zhongli Railway Station",
+	//英文站名 English Title
+	
 	"platform": "1",
+	//月台別 Platform
+	
+	
 	"platform_ch": "月台",
-	"platform_en": "PLAT.",
+	//月台中文標題 Platform Title
+	
+	"platform_en": "PLAT.",	
+	//月台英文標題 English Plarfotm Title
+	
 	"data": 
 	[
 		{
