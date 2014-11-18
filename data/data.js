@@ -9,7 +9,6 @@ var diagram = {
 	"platform": "1",
 	//月台別 Platform
 	
-	
 	"platform_ch": "月台",
 	//月台中文標題 Platform Title
 	
