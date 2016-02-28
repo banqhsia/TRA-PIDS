@@ -48,6 +48,14 @@
 #platform-text > .platform-en {
 	font-size:15px;
 }
+#time {
+	width: 3.3em;
+	background-color: #000000;
+	color: #F50A0A;
+	margin: 40px auto 0 auto;
+	text-align: center;
+	font-size: 18px;
+}
 #right {
 	position:relative;
 	float:right;

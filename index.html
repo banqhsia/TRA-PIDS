@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<!-- 
-	Copyright (C) Benyi Hsia 
+<!--
+	Copyright (C) Benyi Hsia
 	CC BY SA
 	http://benyi.tw
 -->
@@ -14,11 +14,11 @@
 
 	<title>旅客資訊系統</title>
 
-	<script src="js/jquery.min.js"></script> 
-	<script src="js/bootstrap.min.js"></script> 
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 	<script src="data/data.js"></script>
 
-	<link rel="stylesheet" href="css/bootstrap.min.css"> 
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Armata|Trykker" type="text/css"> <!-- font -->
 
@@ -42,12 +42,16 @@
 			<div id="left">
 
 				<div id="platform">
-					
+
 				</div>
 
 				<div id="platform-text" >
 					<p class="platform-ch"></p>
 					<p class="platform-en"></p>
+				</div>
+
+				<div id="time">
+
 				</div>
 
 			</div>
@@ -120,7 +124,7 @@
 
 
 <script type="text/javascript">
-	
+
 	var data = $.parseJSON(JSON.stringify(diagram));
 
 		$('.title-ch').append(data.title_ch);
@@ -130,6 +134,7 @@
 		$('.platform-en').append(data.platform_en);
 
 		$('#platform').append(data.platform);
+		$('#time').append(data.time);
 
 		for (var i=0; i<=4; i++) {
 
@@ -144,7 +149,7 @@
 		}
 
 	var lightCount = 0;
-	
+
 	setInterval(function () {
 
 		if (lightCount%2==0) {
